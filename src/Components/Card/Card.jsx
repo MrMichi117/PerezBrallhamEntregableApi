@@ -19,15 +19,14 @@ const Cardpersonajes = ({ character }) => {
             {character.name || "Nombre no disponible"}
           </Typography>
 
-          <Typography variant="body2" sx={{ color: "text.secondary" }}>
-            <strong>Estilo de respiración:</strong>{" "}
-            {character.breathing_style || "No disponible"}
-            <br />
-            <strong>Afiliación:</strong>{" "}
-            {character.affiliation || "No disponible"}
-            <br />
-            <strong>Rango:</strong> {character.rank || "No disponible"}
-          </Typography>
+       <Typography variant="body2" sx={{ color: "text.secondary" }}>
+  <strong>Edad:</strong> {character.age ?? "No disponible"}<br />
+  <strong>Género:</strong> {character.gender ?? "No disponible"}<br />
+  <strong>Raza:</strong> {character.race ?? "No disponible"}<br />
+  <strong>Descripción:</strong> {character.description ?? "Sin descripción"}
+</Typography>
+
+
         </CardContent>
       </CardActionArea>
     </Card>
